@@ -17,11 +17,11 @@ elif [ "$YEAR" -lt 2018 ] || [ "$YEAR" -gt "$(date +%G)" ]; then
 
 else
     echo "library(tidyverse)
-    library(tidytuesdayR)
+  library(tidytuesdayR)
 
-    tuesdata <- tt_load(${YEAR}, ${WEEK})
+  tuesdata <- tt_load(${YEAR}, ${WEEK})
 
-    list2env(tuesdata, envir = .GlobalEnv)" > "$FILENAME"
+  list2env(tuesdata, envir = .GlobalEnv)" > "$FILENAME"
 
     chmod +x "$FILENAME"
     echo "Created '$FILENAME'"
