@@ -5,7 +5,7 @@ This repo contains a simple script to streamline the creation of weekly TidyTues
 To install the script with one line, run this in bash/zsh:
 
 ```
-curl -sSL https://raw.githubusercontent.com/brendensm/tt/refs/heads/master/tt.sh -o ~/.local/bin/tt && chmod +x ~/.local/bin/tt
+curl -sSL https://raw.githubusercontent.com/brendensm/tt/refs/heads/master/tt.sh -o /usr/local/bin/tt && chmod +x /usr/local/bin/tt
 ```
 
 ## Overview
