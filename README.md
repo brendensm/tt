@@ -5,7 +5,7 @@ This repo contains a simple script to streamline the creation of weekly TidyTues
 To install the script with one line, run this in bash/zsh:
 
 ```
-curl -sSL https://raw.githubusercontent.com/username/tidytuesday-selector/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/brendensm/tt/refs/heads/master/install.sh | bash
 ```
 
 ## Overview
