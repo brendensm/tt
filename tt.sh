@@ -84,24 +84,7 @@ library(tidyverse)
 library(tidytuesdayR)
                 
 
-<<<<<<< HEAD
-elif [ "$YEAR" -lt 2018 ] || [ "$YEAR" -gt "$(date +%G)" ]; then
-    echo "Please enter a valid year (2018-$(date +%G))."
-
-else
-    echo "library(tidyverse)
-library(tidytuesdayR)
-
-tuesdata <- tt_load(${YEAR}, ${WEEK})
-
-list2env(tuesdata, envir = .GlobalEnv)" > "$FILENAME"
-
-    chmod +x "$FILENAME"
-    echo "Created '$FILENAME'"
-fi
-=======
 tuesdata <- tt_load(${year}, ${week})
->>>>>>> bbec908 (updated install script)
 
 list2env(tuesdata, envir = .GlobalEnv)
 
