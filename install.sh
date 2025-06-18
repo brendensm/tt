@@ -66,7 +66,7 @@ mkdir -p "$INSTALL_DIR"
 
 # Download and install
 echo "📥 Downloading tt..."
-curl -sSL "$REPO_URL/$SCRIPT_NAME" -o "$INSTALL_DIR/$SCRIPT_NAME"
+curl -sSL "$REPO_URL" -o "$INSTALL_DIR/$SCRIPT_NAME"
 chmod +x "$INSTALL_DIR/$SCRIPT_NAME"
 
 # Check if ~/.local/bin is in PATH
