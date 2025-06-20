@@ -72,8 +72,14 @@ chmod +x "$INSTALL_DIR/$SCRIPT_NAME"
 # Check if ~/.local/bin is in PATH
 if [[ ":$PATH:" != *":$HOME/.local/bin:"* ]]; then
     echo "📝 Adding $HOME/.local/bin to PATH..."
-    echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
-    echo "Please run: source ~/.bashrc (or restart your terminal)"
+    
+    if [ $(uname) = "Darwin" ]; then
+        echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
+        echo "Please run: source ~/.zshrc (or restart your terminal)"
+    else
+      echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+      echo "Please run: source ~/.bashrc (or restart your terminal)"
+    fi
 fi
 
 echo "✅ tt installed successfully!"
